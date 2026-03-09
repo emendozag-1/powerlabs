@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingeniería de Datos y Analítica | PowerLabs</title>
+    <meta name="description"
+        content="Ingeniería de datos, Power BI, analítica y Big Data para toma de decisiones gerenciales.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .service-hero {
+            position: relative;
+            padding: 10rem 0 6rem;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .service-hero-content {
+            max-width: 600px;
+            z-index: 10;
+            position: relative;
+        }
+
+        .service-hero-image {
+            position: absolute;
+            right: -5%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 55%;
+            border-radius: 20px;
+            z-index: 1;
+            opacity: 0.8;
+            box-shadow: 0 0 50px rgba(14, 165, 233, 0.4);
+        }
+
+        .service-hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(to right, var(--bg-base) 45%, transparent 100%);
+            z-index: 2;
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        .detail-text h3 {
+            color: var(--accent-blue);
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .detail-text p {
+            color: var(--text-secondary);
+            font-size: 1.125rem;
+        }
+
+        @media (max-width: 992px) {
+            .service-hero-image {
+                display: none;
+            }
+
+            .service-hero::after {
+                display: none;
+            }
+
+            .detail-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="brand">Power<span>Labs</span></a>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#servicios">Servicios</a></li>
+                    <li><a href="index.html#contacto" class="btn btn-outline">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="service-hero">
+            <div class="glow glow-1"></div>
+            <img src="assets/img/data.png" alt="Analítica de Datos y Power BI"
+                class="service-hero-image show-on-scroll">
+            <div class="container service-hero-content show-on-scroll delay-1">
+                <span class="badge">Business Intelligence</span>
+                <h1 class="hero-title">Ingeniería de <span>Datos</span></h1>
+                <p class="hero-description">Los datos crudos no sirven si no puedes leerlos. Transformamos terabytes de
+                    información desordenada en paneles gerenciales claros, accionables y en tiempo real.</p>
+                <div class="hero-actions">
+                    <a href="index.html#contacto" class="btn btn-primary">Hablar con un Analista</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Details Section -->
+        <section class="section">
+            <div class="container">
+
+                <div class="detail-grid show-on-scroll">
+                    <div class="detail-text">
+                        <h3>Analítica y Power BI</h3>
+                        <p>Construimos tableros de control ejecutivos (Dashboards) utilizando Microsoft Power BI y
+                            Tableau. Consolidamos sus ventas, métricas operativas y finanzas en una sola vista para que
+                            pueda medir el rendimiento de la empresa desde su celular.</p>
+                    </div>
+                    <div class="detail-visual service-card" style="border-color: rgba(250, 204, 21, 0.3);">
+                        <h4 style="color:#fff; margin-bottom: 1rem;">Visibilidad Total</h4>
+                        <p style="color:var(--text-secondary);">Descubra qué productos son realmente rentables, analice
+                            el embudo de ventas históricas e identifique anomalías financieras de un solo vistazo.</p>
+                    </div>
+                </div>
+
+                <div class="detail-grid show-on-scroll delay-1" style="direction: rtl;">
+                    <div class="detail-text" style="direction: ltr;">
+                        <h3 style="color:var(--accent-yellow);">Big Data e Integración</h3>
+                        <p>Diseñamos tuberías de datos (Data Pipelines) y Data Lakes. Si su empresa maneja un volumen
+                            masivo de información transaccional diaria, nos aseguramos de estructurarla, limpiarla y
+                            ponerla a disposición de modelos predictivos o algoritmos de forecasting.</p>
+                    </div>
+                    <div class="detail-visual service-card"
+                        style="direction: ltr; border-color: rgba(14, 165, 233, 0.3);">
+                        <h4 style="color:#fff; margin-bottom: 1rem;">La base de la IA</h4>
+                        <ul class="feature-list">
+                            <li>
+                                <div class="feature-bullet"></div><span>No se puede tener IA sin buenos datos.</span>
+                            </li>
+                            <li>
+                                <div class="feature-bullet"></div><span>Arquitectura lista para el futuro (Snowflake,
+                                    AWS, GCP).</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-bottom">
+            <a href="index.html" style="color:var(--accent-blue); text-decoration: underline; font-weight: 500;">Volver
+                al Inicio</a>
+            <p style="margin-top:2rem;">&copy; 2026 PowerLabs. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

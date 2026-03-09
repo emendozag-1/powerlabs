@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatización IA | PowerLabs</title>
+    <meta name="description"
+        content="Automatización con Inteligencia Artificial utilizando agentes n8n para reducir costos y escalar operaciones.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .service-hero {
+            position: relative;
+            padding: 10rem 0 6rem;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .service-hero-content {
+            max-width: 600px;
+            z-index: 10;
+            position: relative;
+        }
+
+        .service-hero-image {
+            position: absolute;
+            right: -5%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 55%;
+            border-radius: 20px;
+            z-index: 1;
+            opacity: 0.8;
+            box-shadow: 0 0 50px rgba(14, 165, 233, 0.2);
+        }
+
+        .service-hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(to right, var(--bg-base) 40%, transparent 100%);
+            z-index: 2;
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        .detail-text h3 {
+            color: var(--accent-yellow);
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .detail-text p {
+            color: var(--text-secondary);
+            font-size: 1.125rem;
+        }
+
+        @media (max-width: 992px) {
+            .service-hero-image {
+                display: none;
+            }
+
+            .service-hero::after {
+                display: none;
+            }
+
+            .detail-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="brand">Power<span>Labs</span></a>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#servicios">Servicios</a></li>
+                    <li><a href="index.html#contacto" class="btn btn-outline">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Service Hero -->
+        <section class="service-hero">
+            <div class="glow glow-1"></div>
+            <img src="assets/img/automation.png" alt="Concepto de Automatización IA"
+                class="service-hero-image show-on-scroll">
+            <div class="container service-hero-content show-on-scroll delay-1">
+                <span class="badge">Agentes Autónomos</span>
+                <h1 class="hero-title">Automatización <span>IA</span></h1>
+                <p class="hero-description">Transformamos el trabajo manual repetitivo en flujos digitales autónomos.
+                    Conectamos todas tus herramientas para que trabajen solas.</p>
+                <div class="hero-actions">
+                    <a href="index.html#contacto" class="btn btn-primary">Quiero automatizar</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Details Section -->
+        <section class="section">
+            <div class="container">
+
+                <div class="detail-grid show-on-scroll">
+                    <div class="detail-text">
+                        <h3>Flujos Complejos con n8n</h3>
+                        <p>Implementamos soluciones robustas utilizando n8n (arquitecturas de nodos) para interconectar
+                            tu ERP, CRM, bases de datos y herramientas de comunicación como Slack o WhatsApp. Sin
+                            intervención humana.</p>
+                    </div>
+                    <div class="detail-visual service-card">
+                        <h4 style="color:#fff; margin-bottom: 1rem;">Caso Práctico</h4>
+                        <p style="color:var(--text-secondary);">Recepción de factura por correo -> Extracción óptica
+                            (OCR) por IA -> Carga automática en sistema de contabilidad -> Alerta en WhatsApp al
+                            gerente.</p>
+                    </div>
+                </div>
+
+                <div class="detail-grid show-on-scroll delay-1" style="direction: rtl;">
+                    <div class="detail-text" style="direction: ltr;">
+                        <h3 style="color:var(--accent-blue);">Agentes de IA Especializados</h3>
+                        <p>No solo movemos datos, les damos inteligencia. Creamos agentes conversacionales (LLMs
+                            interactivos) que atienden clientes, responden preguntas frecuentes procesando tus PDFs
+                            técnicos, o asisten a tu área comercial 24/7.</p>
+                    </div>
+                    <div class="detail-visual service-card"
+                        style="direction: ltr; border-color: rgba(14, 165, 233, 0.3);">
+                        <h4 style="color:#fff; margin-bottom: 1rem;">Beneficios</h4>
+                        <ul class="feature-list">
+                            <li>
+                                <div class="feature-bullet"></div><span>Reducción del 80% en tiempo de respuesta.</span>
+                            </li>
+                            <li>
+                                <div class="feature-bullet"></div><span>Cero errores de transcripción humana.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-bottom">
+            <a href="index.html" style="color:var(--accent-blue); text-decoration: underline; font-weight: 500;">Volver
+                al Inicio</a>
+            <p style="margin-top:2rem;">&copy; 2026 PowerLabs. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
